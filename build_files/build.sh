@@ -10,7 +10,7 @@ cp -avf "/ctx/system_files"/. /
 # this installs a package from fedora repos
 dnf5 -y install \
   niri \
-  noctalia-shell \
+  noctalia \
   foot \
   xdg-desktop-portal-gtk \
   nautilus \
