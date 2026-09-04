@@ -18,3 +18,12 @@ dnf5 -y install \
   xwayland-satellite
 
 systemctl enable podman.socket
+
+# Clean up boot artifacts from base image
+rm -rf /boot/extlinux
+
+# Clean up runtime-only directories
+rm -rf /run/dnf
+
+# Clean up dnf state (repos, lock, countme, cache)
+rm -rf /var/lib/dnf
