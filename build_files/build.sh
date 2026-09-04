@@ -11,6 +11,7 @@ cp -avf "/ctx/system_files"/. /
 dnf5 -y install \
   niri \
   noctalia \
+  alacritty \
   foot \
   xdg-desktop-portal-gtk \
   nautilus \
