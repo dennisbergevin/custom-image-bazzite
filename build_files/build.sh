@@ -51,6 +51,8 @@ EOF
 
 # Install 1Password
 dnf5 install -y 1password
+chgrp 1001 /opt/1Password/1Password-BrowserSupport
+chmod g+s /opt/1Password/1Password-BrowserSupport
 
 # Clean up repo file (required - repos don't work at runtime in bootc images)
 rm -f /etc/yum.repos.d/1password.repo
